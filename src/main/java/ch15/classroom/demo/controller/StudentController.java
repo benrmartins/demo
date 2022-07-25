@@ -37,7 +37,7 @@ public class StudentController {
 
         return ResponseEntity.ok(studentService.saveStudent(student));
     }
-
+//
     @PostMapping("/teacher/{teacherId}")
     public ResponseEntity<Student> createStudent(@RequestBody Student student, @PathVariable Long teacherId) {
         Teacher teacher = teacherService.findTeacher(teacherId);
